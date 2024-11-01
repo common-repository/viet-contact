@@ -1,0 +1,198 @@
+#vietcontact, #vcnutan{white-space: initial;}
+#vietcontact img, #vcnutan img{
+padding:0px !important;
+margin:0px !important;
+box-shadow:0px 0px 0px !important;
+display: inline !important;
+}
+#vietcontact button, #vcnutan button{line-height: 0 !important;font-family: Arial, sans-serif;font-weight: normal;}
+#vietcontact img:hover{
+transform: scale(1.2);
+animation: runglac 0.5s;
+animation-iteration-count: infinite;
+} 
+@keyframes runglac {
+ 0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#vc-anhien, #vc-andi {
+position: fixed;
+bottom: 10px;
+left: 10px; 
+z-index: 99; 
+border: none;
+outline: none;
+background: #444;
+color: white;
+cursor: pointer;
+border-radius: 30px;
+width:60px !important;
+height:60px !important;
+padding:0px;
+opacity:0.6;
+text-transform: none;
+}
+#vc-messenger {
+position: fixed;
+bottom: 80px;
+left: 10px; 
+z-index: 99; 
+border: none;
+outline: none;
+background: linear-gradient(36deg, rgba(31,132,252,1) 0%, rgb(255 0 212) 100%);
+color: white;
+cursor: pointer;
+border-radius: 30px;
+width:60px !important;
+height:60px !important;
+padding:0px;
+text-transform: none;
+}
+#vc-zalo {
+position: fixed;
+bottom: 150px;
+left: 10px; 
+z-index: 99; 
+border: none;
+outline: none;
+background: linear-gradient(36deg, rgba(0,101,247,1) 0%, rgb(0 240 252) 100%);
+color: white;
+cursor: pointer;
+border-radius: 30px;
+width:60px !important;
+height:60px !important;
+padding:0px;
+text-transform: none;
+}
+#vc-email {
+position: fixed;
+bottom: 220px;
+left: 10px; 
+z-index: 99; 
+border: none;
+outline: none;
+background: linear-gradient(47deg, rgb(222 33 0) 0%, rgb(255 200 0) 100%);
+color: white;
+cursor: pointer;
+border-radius: 30px;
+width:60px !important;
+height:60px !important;
+padding:0px;
+text-transform: none;
+}
+#vc-phone {
+position: fixed;
+bottom: 290px;
+left: 10px; 
+z-index: 99; 
+border: none;
+outline: none;
+background: linear-gradient(47deg, rgb(19 141 160) 0%, rgb(0 243 86) 100%);
+color: white;
+cursor: pointer;
+border-radius: 30px;
+width:60px !important;
+height:60px !important;
+padding:0px;
+text-transform: none;
+}            
+#vc-messenger:hover, #vc-zalo:hover, #vc-email:hover, #vc-phone:hover {
+filter: hue-rotate(45deg);
+}
+
+#vc-messenger span, #vc-zalo span, #vc-email span, #vc-phone span, #vc-anhien span, #vc-andi span {
+    display: none;
+	word-break: normal;
+}
+#vc-messenger:hover span, #vc-zalo:hover span, #vc-email:hover span, #vc-phone:hover span, #vc-anhien:hover span, #vc-andi:hover span {
+	background:#000;
+    padding: 20px;
+    display: block;
+    z-index: 100;
+    left: 55px;
+    margin: 10px;
+    position: absolute;
+	font-size:20px;
+	border-radius:30px;
+	color:#fff;
+    top: 0px;
+	opacity:0.8;
+    text-decoration: none
+}
+
+
+@-webkit-keyframes glowing {
+  0% { background-color: #777; -webkit-box-shadow: 0 0 3px #777; }
+  50% { background-color: #000; -webkit-box-shadow: 0 0 10px #999; }
+  100% { background-color: #777; -webkit-box-shadow: 0 0 3px #777; }
+}
+ 
+@-moz-keyframes glowing {
+  0% { background-color: #777; -moz-box-shadow: 0 0 3px #777; }
+  50% { background-color: #000; -moz-box-shadow: 0 0 10px #999; }
+  100% { background-color: #777; -moz-box-shadow: 0 0 3px #777; }
+}
+ 
+@-o-keyframes glowing {
+  0% { background-color: #777; box-shadow: 0 0 3px #777; }
+  50% { background-color: #000; box-shadow: 0 0 10px #999; }
+  100% { background-color: #777; box-shadow: 0 0 3px #777; }
+}
+ 
+@keyframes glowing {
+  0% { background-color: #777; box-shadow: 0 0 3px #777; }
+  50% { background-color: #000; box-shadow: 0 0 10px #999; }
+  100% { background-color: #777; box-shadow: 0 0 3px #777; }
+}
+ 
+#vc-anhien, #vc-andi {
+  -webkit-animation: glowing 1100ms infinite;
+  -moz-animation: glowing 1100ms infinite;
+  -o-animation: glowing 1100ms infinite;
+  animation: glowing 1100ms infinite;
+}
+.vcmobile{
+position: fixed;
+bottom: 0px;
+left: 0px; 
+z-index: 99;
+width:100%;
+background: linear-gradient(47deg, rgb(19 141 160) 0%, rgb(0 243 86) 100%);
+white-space: initial;
+display:none;
+}
+/* theme thay doi tren dien thoai */
+.vcmobile.Pro1{background: linear-gradient(47deg, rgb(19 141 160) 0%, rgb(0 243 86) 100%);}
+.vcmobile.Pro2{background: linear-gradient(47deg, rgb(222 33 0) 0%, rgb(255 200 0) 100%);}
+.vcmobile.Pro3{background: linear-gradient(36deg, rgba(0,101,247,1) 0%, rgb(0 240 252) 100%);}
+.vcmobile.Pro4{background: linear-gradient(36deg, rgba(31,132,252,1) 0%, rgb(255 0 212) 100%);}
+/* theme thay doi tren dien thoai */
+.vcmobile button{
+width:100%;
+padding-top:10px !important;
+padding-bottom:10px !important;
+border-radius:0px !important;
+background:none !important;
+border:none !important;
+outline: none;
+margin: 0px !important;
+} 
+.vcmobile img{
+margin:0 auto !important;
+border:none !important;
+box-shadow: 0px 0px 0px !important;
+}
+/* Desktop and mobile */
+@media (max-width: 700px) {
+.vcdesktop{display:none !important}
+.vcmobile{display:flex !important}
+}
